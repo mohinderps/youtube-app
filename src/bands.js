@@ -1,78 +1,94 @@
+import pinkFLoydCover from './covers/pink-floyd.jpg';
+import poetsOfTheFallCover from './covers/poets-of-the-fall.jpg';
+import metallicaCover from './covers/metallica.jpg';
+import nirvanaCover from './covers/nirvana.jpg';
+import coldplayCover from './covers/coldplay.jpg';
+import imagineDragonsCover from './covers/imagine-dragons.jpg';
+import chainsmokersCover from './covers/chainsmokers.jpg';
+import alanWalkerCover from './covers/alan-walker.jpg';
+import redHotChilliPeppersCover from './covers/red-hot-chilli-peppers.jpg';
+import linkinParkCover from './covers/linkin-park.jpg';
+import porcupineTreeCover from './covers/porcupine-tree.jpg';
+import kygoCover from './covers/kygo.jpg';
+import davidGuettaCover from './covers/david-guetta.jpg';
+import eminemCover from './covers/eminem.jpg';
+import twentyOnePilotsCover from './covers/twenty-one-pilots.jpg';
+
 const bands = [
   {
     id: 1,
     name: 'Pink Floyd',
-    cover: 'pink-floyd.jpg'
+    cover: pinkFLoydCover
   },
   {
     id: 2,
     name: 'Poets of the Fall',
-    cover: 'poets-of-the-fall.jpg'
+    cover: poetsOfTheFallCover
   },
   {
     id: 3,
     name: 'Metallica',
-    cover: 'metallica.jpg'
+    cover: metallicaCover
   },
   {
     id: 4,
     name: 'Nirvana',
-    cover: 'nirvana.jpg'
+    cover: nirvanaCover
   },
   {
     id: 5,
     name: 'Coldplay',
-    cover: 'coldplay.jpg'
+    cover: coldplayCover
   },
   {
     id: 6,
     name: 'Imagine Dragons',
-    cover: 'imagine-dragons.jpg'
+    cover: imagineDragonsCover
   },
   {
     id: 7,
     name: 'Chainsmokers',
-    cover: 'chainsmokers.jpg'
+    cover: chainsmokersCover
   },
   {
     id: 8,
     name: 'Alan Walker',
-    cover: 'alan-walker.jpg'
+    cover: alanWalkerCover
   },
   {
     id: 9,
     name: 'Red Hot Chilli Peppers',
-    cover: 'red-hot-chilli-peppers.jpg'
+    cover: redHotChilliPeppersCover
   },
   {
     id: 10,
     name: 'Linkin Park',
-    cover: 'linkin-park.jpg'
+    cover: linkinParkCover
   },
   {
     id: 11,
     name: 'Porcupine Tree',
-    cover: 'porcupine-tree.jpg'
+    cover: porcupineTreeCover
   },
   {
     id: 12,
     name: 'Kygo',
-    cover: 'kygo.jpg'
+    cover: kygoCover
   },
   {
     id: 13,
     name: 'David Guetta',
-    cover: 'david-guetta.jpg'
+    cover: davidGuettaCover
   },
   {
     id: 14,
     name: 'Eminem',
-    cover: 'eminem.jpg'
+    cover: eminemCover
   },
   {
     id: 15,
     name: 'Twenty One Pilots',
-    cover: 'twenty-one-pilots.jpg'
+    cover: twentyOnePilotsCover
   }
 ];
 

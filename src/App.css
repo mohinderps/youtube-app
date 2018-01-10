@@ -1,17 +1,5 @@
-/*.App {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-}
-
 .Cover {
-  width: 33.33%;
-  height: 500px;
-}*/
-
-.Cover {
+  float: left;
   width: 50%;
   height: 400px;
 }

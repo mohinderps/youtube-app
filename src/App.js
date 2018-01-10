@@ -4,16 +4,17 @@ import './App.css';
 
 class App extends Component {
 
-
   render() {
-    this.elements = this.props.bands.map(band => {
-      return (
-        <div key={band.id} className="Cover">{band.name}</div>
+    this.covers = this.props.bands.map(band => (
+        <div key={band.id}
+          className="Cover"
+          style={{backgroundImage: `url(${band.cover})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+        </div>
       )
-    });
+    );
     return (
       <div className="App">
-        {this.elements}
+        {this.covers}
       </div>
     );
   }
