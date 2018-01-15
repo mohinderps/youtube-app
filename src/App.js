@@ -6,9 +6,10 @@ class App extends Component {
 
   render() {
     this.covers = this.props.bands.map(band => (
-        <div key={band.id}
-          className="Cover"
-          style={{backgroundImage: `url(${band.cover})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+        <div key={band.id} className="Cover">
+          <div className="Cover-Image">
+            <img src={band.cover} width="100%" height="100%"/>
+          </div>
         </div>
       )
     );
