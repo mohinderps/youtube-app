@@ -3,6 +3,7 @@
   width: 50%;
   height: 400px;
   position: relative;
+  cursor: pointer;
 }
 
 .Cover-Image {
@@ -11,26 +12,5 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-/*.Cover-Details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-
-/*.Cover-Details:hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-}*/
-
-.Cover-Name {
-  font-size: 5rem;
-  color: white;
+  background: black;
 }

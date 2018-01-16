@@ -1,5 +1,4 @@
 import pinkFLoydCover from './covers/pink-floyd.jpg';
-import poetsOfTheFallCover from './covers/poets-of-the-fall.jpg';
 import metallicaCover from './covers/metallica.jpg';
 import nirvanaCover from './covers/nirvana.jpg';
 import coldplayCover from './covers/coldplay.jpg';
@@ -22,77 +21,73 @@ const bands = [
   },
   {
     id: 2,
-    name: 'Poets of the Fall',
-    cover: poetsOfTheFallCover
-  },
-  {
-    id: 3,
     name: 'Metallica',
     cover: metallicaCover
   },
   {
-    id: 4,
+    id: 3,
     name: 'Nirvana',
     cover: nirvanaCover
   },
   {
-    id: 5,
+    id: 4,
     name: 'Coldplay',
     cover: coldplayCover
   },
   {
-    id: 6,
+    id: 5,
     name: 'Imagine Dragons',
     cover: imagineDragonsCover
   },
   {
-    id: 7,
+    id: 6,
     name: 'Chainsmokers',
     cover: chainsmokersCover
   },
   {
-    id: 8,
+    id: 7,
     name: 'Alan Walker',
     cover: alanWalkerCover
   },
   {
-    id: 9,
+    id: 8,
     name: 'Red Hot Chilli Peppers',
     cover: redHotChilliPeppersCover
   },
   {
-    id: 10,
+    id: 9,
     name: 'Linkin Park',
     cover: linkinParkCover
   },
   {
-    id: 11,
+    id: 10,
     name: 'Porcupine Tree',
     cover: porcupineTreeCover
   },
   {
-    id: 12,
+    id: 11,
     name: 'Kygo',
     cover: kygoCover
   },
   {
-    id: 13,
+    id: 12,
     name: 'David Guetta',
     cover: davidGuettaCover
   },
   {
-    id: 14,
+    id: 13,
     name: 'Eminem',
     cover: eminemCover
   },
   {
-    id: 15,
+    id: 14,
     name: 'Twenty One Pilots',
     cover: twentyOnePilotsCover
   }
 ];
 
 const bandsToAdd = [
+  'Poets of the Fall',
   'The Weeknd',
   'Green Day',
   'Avicii',

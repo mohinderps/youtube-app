@@ -15,7 +15,12 @@ class App extends Component {
     );
     return (
       <div className="App">
-        {this.covers}
+        <div className="Player-Container">
+          Hello
+        </div>
+        <div className="Covers-Container">
+          {this.covers}
+        </div>
       </div>
     );
   }
