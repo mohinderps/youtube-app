@@ -21,19 +21,20 @@ const bands = [
   },
   {
     id: 2,
+    name: 'Coldplay',
+    cover: coldplayCover
+  },
+  {
+    id: 3,
     name: 'Metallica',
     cover: metallicaCover
   },
   {
-    id: 3,
+    id: 4,
     name: 'Nirvana',
     cover: nirvanaCover
   },
-  {
-    id: 4,
-    name: 'Coldplay',
-    cover: coldplayCover
-  },
+
   {
     id: 5,
     name: 'Imagine Dragons',
@@ -86,29 +87,29 @@ const bands = [
   }
 ];
 
-const bandsToAdd = [
-  'Poets of the Fall',
-  'The Weeknd',
-  'Green Day',
-  'Avicii',
-  'Martin Garrix',
-  'Arctic Monkeys',
-  'Passenger',
-  'Led Zepplin',
-  'Eagles',
-  'Kanye West',
-  'Sia',
-  'Snow Patrol',
-  'Diljit',
-  'Sharry Mann',
-  'Jasmine Sandals',
-  'Guru Randhawa',
-  'Mankrit Aulakh',
-  'Hardy Sandhu',
-  'Badshah',
-  'Jasleen Royal',
-  'Ayushmann Khurrana',
-  'Imran khan'
-];
+// const bandsToAdd = [
+//   'Poets of the Fall',
+//   'The Weeknd',
+//   'Green Day',
+//   'Avicii',
+//   'Martin Garrix',
+//   'Arctic Monkeys',
+//   'Passenger',
+//   'Led Zepplin',
+//   'Eagles',
+//   'Kanye West',
+//   'Sia',
+//   'Snow Patrol',
+//   'Diljit',
+//   'Sharry Mann',
+//   'Jasmine Sandals',
+//   'Guru Randhawa',
+//   'Mankrit Aulakh',
+//   'Hardy Sandhu',
+//   'Badshah',
+//   'Jasleen Royal',
+//   'Ayushmann Khurrana',
+//   'Imran khan'
+// ];
 
 export default bands;
