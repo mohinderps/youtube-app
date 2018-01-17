@@ -8,8 +8,20 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      showPlayerHolder: false,
       showPlayer: false,
       band: null
+    }
+  }
+
+  scrollToTop() {
+  	var id = setInterval(frame, 1);
+    function frame() {
+      if (document.body.scrollTop <= 0) {
+        clearInterval(id);
+      } else {
+      document.body.scrollTop = document.body.scrollTop - 1;
+      }
     }
   }
 
@@ -18,16 +30,30 @@ class App extends Component {
       showPlayer: true,
       band: band
     });
-    document.body.scrollTop = 0;
-    // window.scroll({
-    //   top: 0,
-    //   behavior: 'smooth'
-    // });
+  }
+
+  showPlayerHolder() {
+    this.setState({
+      showPlayerHolder: true
+    })
+    this.scrollToTop();
+  }
+
+  handleScroll() {
+    // if(window.scrollY)
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentDidUnmount() {
+    window.removeEventListener('scroll');
   }
 
   render() {
     this.covers = this.props.bands.map(band => (
-        <div key={band.id} className="Cover" onClick={() => this.selectBand(band)}>
+        <div key={band.id} className="Cover" onClick={() => this.showPlayerHolder()}>
           <div className="Cover-Image">
             <img src={band.cover} width="100%" height="100%"/>
           </div>
@@ -36,7 +62,7 @@ class App extends Component {
     );
     return (
       <div className="App">
-        <div className="Scroller" data-showplayer={this.state.showPlayer? 1: 0}>
+        <div className="Scroller" data-showplayerholder={this.state.showPlayerHolder? 1: 0}>
           <div className="Player-Container"
             style={this.state.band ? {
               backgroundImage: `url(${this.state.band.cover})`,

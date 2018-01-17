@@ -10,8 +10,8 @@ class Player extends Component {
 
   onYouTubeIframeAPIReady() {
     this.player = new window['YT'].Player('player', {
-      height: '75%',
-      width: '75%',
+      height: '80%',
+      width: '80%',
       videoId: 'M7lc1UVf-VE',
       events: {
         'onReady': this.onPlayerReady

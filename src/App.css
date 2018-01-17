@@ -6,13 +6,14 @@
   position: absolute;
   left: 0;
   width: 100%;
+  /*transition: top 1s ease;*/
 }
 
-.Scroller[data-showplayer="0"] {
+.Scroller[data-showplayerholder="0"] {
   top: -100vh;
 }
 
-.Scroller[data-showplayer="1"] {
+.Scroller[data-showplayerholder="1"] {
   top: 0vh;
 }
 
