@@ -15,12 +15,16 @@ class App extends Component {
   }
 
   scrollToTop() {
-  	var id = setInterval(frame, 1);
+  	let id = setInterval(frame, 4);
+    let previousScrollTopPosition = document.body.scrollTop;
     function frame() {
-      if (document.body.scrollTop <= 0) {
+      console.log("Scroll: ", document.body.scrollTop);
+      if (document.body.scrollTop <= 0 || document.body.scrollTop > previousScrollTopPosition) {
         clearInterval(id);
-      } else {
-      document.body.scrollTop = document.body.scrollTop - 1;
+      }
+      else {
+        document.body.scrollTop = document.body.scrollTop - 8;
+        previousScrollTopPosition = document.body.scrollTop;
       }
     }
   }
@@ -37,18 +41,6 @@ class App extends Component {
       showPlayerHolder: true
     })
     this.scrollToTop();
-  }
-
-  handleScroll() {
-    // if(window.scrollY)
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentDidUnmount() {
-    window.removeEventListener('scroll');
   }
 
   render() {
