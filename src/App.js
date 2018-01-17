@@ -31,21 +31,15 @@ class App extends Component {
 
   selectBand(band) {
     this.setState({
-      showPlayer: true,
+      showPlayerHolder: true,
       band: band
     });
-  }
-
-  showPlayerHolder() {
-    this.setState({
-      showPlayerHolder: true
-    })
     this.scrollToTop();
   }
 
   render() {
     this.covers = this.props.bands.map(band => (
-        <div key={band.id} className="Cover" onClick={() => this.showPlayerHolder()}>
+        <div key={band.id} className="Cover" onClick={() => this.selectBand(band)}>
           <div className="Cover-Image">
             <img src={band.cover} width="100%" height="100%"/>
           </div>
