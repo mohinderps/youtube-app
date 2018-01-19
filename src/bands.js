@@ -17,73 +17,108 @@ const bands = [
   {
     id: 1,
     name: 'Pink Floyd',
-    cover: pinkFLoydCover
+    cover: pinkFLoydCover,
+    playlist: [
+      {
+        title: 'Hey You',
+        videoId: 'TFjmvfRvjTc'
+      },
+      {
+        title: 'Comfortably Numb',
+        videoId: '_FrOQC-zEog'
+      },
+      {
+        title: 'Wish You Were Here',
+        videoId: 'IXdNnw99-Ic'
+      },
+      {
+        title: 'High Hopes',
+        videoId: '7jMlFXouPk8'
+      },
+      {
+        title: 'Coming Back To Life',
+        videoId: 'yjoPWxmOCtc'
+      }
+    ]
   },
   {
     id: 2,
     name: 'Coldplay',
-    cover: coldplayCover
+    cover: coldplayCover,
+    playlist: []
   },
   {
     id: 3,
     name: 'Metallica',
-    cover: metallicaCover
+    cover: metallicaCover,
+    playlist: []
   },
   {
     id: 4,
     name: 'Nirvana',
-    cover: nirvanaCover
+    cover: nirvanaCover,
+    playlist: []
   },
 
   {
     id: 5,
     name: 'Imagine Dragons',
-    cover: imagineDragonsCover
+    cover: imagineDragonsCover,
+    playlist: []
   },
   {
     id: 6,
     name: 'Chainsmokers',
-    cover: chainsmokersCover
+    cover: chainsmokersCover,
+    playlist: []
   },
   {
     id: 7,
     name: 'Alan Walker',
-    cover: alanWalkerCover
+    cover: alanWalkerCover,
+    playlist: []
   },
   {
     id: 8,
     name: 'Red Hot Chilli Peppers',
-    cover: redHotChilliPeppersCover
+    cover: redHotChilliPeppersCover,
+    playlist: []
   },
   {
     id: 9,
     name: 'Linkin Park',
-    cover: linkinParkCover
+    cover: linkinParkCover,
+    playlist: []
   },
   {
     id: 10,
     name: 'Porcupine Tree',
-    cover: porcupineTreeCover
+    cover: porcupineTreeCover,
+    playlist: []
   },
   {
     id: 11,
     name: 'Kygo',
-    cover: kygoCover
+    cover: kygoCover,
+    playlist: []
   },
   {
     id: 12,
     name: 'David Guetta',
-    cover: davidGuettaCover
+    cover: davidGuettaCover,
+    playlist: []
   },
   {
     id: 13,
     name: 'Eminem',
-    cover: eminemCover
+    cover: eminemCover,
+    playlist: []
   },
   {
     id: 14,
     name: 'Twenty One Pilots',
-    cover: twentyOnePilotsCover
+    cover: twentyOnePilotsCover,
+    playlist: []
   }
 ];
 

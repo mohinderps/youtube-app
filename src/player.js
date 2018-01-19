@@ -12,7 +12,7 @@ class Player extends Component {
     this.player = new window['YT'].Player('player', {
       height: '80%',
       width: '80%',
-      videoId: 'M7lc1UVf-VE',
+      videoId: 'UprcpdwuwCg',
       events: {
         'onReady': this.onPlayerReady
       }
@@ -20,7 +20,8 @@ class Player extends Component {
   }
 
   onPlayerReady(event) {
-    event.target.playVideo();
+    debugger
+    //event.target.playVideo();
   }
 
   init() {
@@ -33,6 +34,7 @@ class Player extends Component {
   }
 
   render() {
+    debugger
     return (
       <div id="player"></div>
     )

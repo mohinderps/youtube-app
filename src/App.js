@@ -18,7 +18,6 @@ class App extends Component {
   	let id = setInterval(frame, 4);
     let previousScrollTopPosition = document.body.scrollTop;
     function frame() {
-      console.log("Scroll: ", document.body.scrollTop);
       if (document.body.scrollTop <= 0 || document.body.scrollTop > previousScrollTopPosition) {
         clearInterval(id);
       }
@@ -55,7 +54,7 @@ class App extends Component {
               backgroundPosition: 'center',
               backgroundSize: 'cover'
             }: null}>
-            {/* {this.state.showPlayer && <Player />} */}
+            {this.state.showPlayerHolder && <Player playlist={this.state.band.playlist}/>}
           </div>
           <div className="Covers-Container">
             {this.covers}
