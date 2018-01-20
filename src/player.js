@@ -5,14 +5,25 @@ class Player extends Component {
   constructor(props) {
     super(props);
     this.onYouTubeIframeAPIReady = this.onYouTubeIframeAPIReady.bind(this);
-    this.init();
+    this.onPlayerReady = this.onPlayerReady.bind(this);
+  }
+
+  componentDidMount() {
+    this.setupPlayer();
+  }
+
+  setupPlayer() {
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    window.onYouTubeIframeAPIReady = this.onYouTubeIframeAPIReady;
   }
 
   onYouTubeIframeAPIReady() {
     this.player = new window['YT'].Player('player', {
       height: '80%',
       width: '80%',
-      videoId: 'UprcpdwuwCg',
       events: {
         'onReady': this.onPlayerReady
       }
@@ -20,21 +31,21 @@ class Player extends Component {
   }
 
   onPlayerReady(event) {
-    debugger
-    //event.target.playVideo();
+    this.player.loadPlaylist(this.transformPlaylist(this.props.playlist));
   }
 
-  init() {
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    const firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  transformPlaylist(playlist) {
+    return playlist.reduce((res, val) => {
+      res.push(val.videoId);
+      return res;
+    }, []);
+  }
 
-    window.onYouTubeIframeAPIReady = this.onYouTubeIframeAPIReady;
+  componentDidUpdate() {
+    this.player.loadPlaylist(this.transformPlaylist(this.props.playlist));
   }
 
   render() {
-    debugger
     return (
       <div id="player"></div>
     )
