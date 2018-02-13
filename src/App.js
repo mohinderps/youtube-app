@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   scrollToTop() {
-  	let id = setInterval(frame, 4);
+    let id = setInterval(frame, 4);
     let previousScrollTopPosition = document.body.scrollTop;
     function frame() {
       if (document.body.scrollTop <= 0 || document.body.scrollTop > previousScrollTopPosition) {
@@ -35,7 +35,7 @@ class App extends Component {
     this.scrollToTop();
   }
 
-  render() {
+  componentWillMount() {
     this.covers = this.props.bands.map(band => (
         <div key={band.id} className="Cover" onClick={() => this.selectBand(band)}>
           <div className="Cover-Image">
@@ -44,6 +44,9 @@ class App extends Component {
         </div>
       )
     );
+  }
+
+  render() {
     return (
       <div className="App">
         <div className="Scroller" data-showplayerholder={this.state.showPlayerHolder? 1: 0}>
